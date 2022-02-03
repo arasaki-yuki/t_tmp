@@ -26,11 +26,22 @@
       document.body.appendChild(script);
     });
   </script> -->
+  <!-- setTimeout OK
   <script>
     setTimeout(()=>{
       var script = document.createElement('script');
       script.src = 'gmo-am-reading.7a2dcd9.js';
       document.body.appendChild(script);
+    }, 10000);
+  </script> -->
+  window.onScroll
+  <script>
+    window.addEventListener('scroll', ()=>{
+      if (window.scrollY > 200) {
+        var script = document.createElement('script');
+        script.src = 'gmo-am-reading.7a2dcd9.js';
+        document.body.appendChild(script);
+      }
     }, 10000);
   </script>
 </body>
